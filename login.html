@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login</title>
+        <link href="dolphincrm.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Dolphin CRM</h1>
+
+        </header>
+
+        <h1 id="login"> Login</h1>
+
+        <div id="login">
+            <form id="login" name="Login" action="authLogin.php" onsubmit="return validation()" method="post">
+                <input id="textfield" name="email" type="text" placeholder="Email Address"/>
+                <input id="textfield" name="password" type="text" placeholder="Password"/>
+
+                <input type="submit" id="sumbit" value="Login" />
+            </form>
+
+        </div>
+
+
+        <footer>Copyright © 2022 Dolphin CRM</footer>
+
+        <script>
+            function validation() {
+                let email = document.Login.email.value;
+                let pass = document.Login.password.value;
+
+                if(email.length == 0 && pass.length == 0) {alert("Data Not Entered"); return false;}
+                if(email.length == 0) {alert("Email Not Entered"); return false;}
+                if(pass.length == 0) {alert("Password Not Entered"); return false;}
+                return true;
+            }
+
+
+        </script>
+
+    </body>
+</html>

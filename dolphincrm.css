@@ -1,0 +1,22 @@
+header {
+    background-color: slategray;
+    display: block;
+    
+}
+
+h1#login {
+    font-size: 200%;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+form#login {
+
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 25%;
+}
